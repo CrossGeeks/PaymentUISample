@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5F249CE4-34FD-4631-AF72-EABD9214F71A}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TemplateGuid>{c9e5eea5-ca05-42a1-839b-61506e0a37df}</TemplateGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>CreditCardUISample.Droid</RootNamespace>
+    <AssemblyName>CreditCardUISample.Android</AssemblyName>
+    <AndroidApplication>True</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <TargetFrameworkVersion>v9.0</TargetFrameworkVersion>
+    <AndroidEnableSGenConcurrent>true</AndroidEnableSGenConcurrent>
+    <AndroidHttpClientHandlerType>Xamarin.Android.Net.AndroidClientHandler</AndroidHttpClientHandlerType>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>portable</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidLinkMode>None</AndroidLinkMode>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>portable</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidManagedSymbols>true</AndroidManagedSymbols>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Mono.Android" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="4.1.0.483098-pre1" />
+    <PackageReference Include="Xamarin.Android.Support.Design" Version="28.0.0.1" />
+    <PackageReference Include="Xamarin.Android.Support.v7.AppCompat" Version="28.0.0.1" />
+    <PackageReference Include="Xamarin.Android.Support.v4" Version="28.0.0.1" />
+    <PackageReference Include="Xamarin.Android.Support.v7.CardView" Version="28.0.0.1" />
+    <PackageReference Include="Xamarin.Android.Support.v7.MediaRouter" Version="28.0.0.1" />
+    <PackageReference Include="Xamarin.Android.Support.Core.Utils" Version="28.0.0.1" />
+    <PackageReference Include="Xamarin.Android.Support.CustomTabs" Version="28.0.0.1" />
+    <PackageReference Include="Xamarin.Forms.Visual.Material">
+      <Version>4.1.0.483098-pre1</Version>
+    </PackageReference>
+    <PackageReference Include="PropertyChanged.Fody">
+      <Version>3.0.1</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainActivity.cs" />
+    <Compile Include="Resources\Resource.designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Renderers\CustomEntryRenderer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Assets\AboutAssets.txt" />
+    <None Include="Properties\AndroidManifest.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\Tabbar.axml" />
+    <AndroidResource Include="Resources\layout\Toolbar.axml" />
+    <AndroidResource Include="Resources\values\styles.xml" />
+    <AndroidResource Include="Resources\values\colors.xml" />
+    <AndroidResource Include="Resources\mipmap-anydpi-v26\icon.xml" />
+    <AndroidResource Include="Resources\mipmap-anydpi-v26\icon_round.xml" />
+    <AndroidResource Include="Resources\mipmap-hdpi\icon.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\launcher_foreground.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\icon.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\launcher_foreground.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\icon.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\launcher_foreground.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\icon.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\launcher_foreground.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\icon.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_visa.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_visa.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_visa.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_visa.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_visa.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\ic_visa.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_mastercard_white.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_mastercard_white.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_mastercard_white.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_mastercard_white.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_mastercard_white.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\ic_mastercard_white.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_mastercard.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_mastercard.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_mastercard.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_mastercard.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_mastercard.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\ic_mastercard.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_amex.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_amex.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_amex.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_amex.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_amex.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\ic_amex.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_amex_blue.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_amex_blue.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_amex_blue.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_amex_blue.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_amex_blue.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\ic_amex_blue.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_visa_white.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_visa_white.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_visa_white.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_visa_white.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_visa_white.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\ic_visa_white.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_amex_light.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_amex_light.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_amex_light.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_amex_light.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_amex_light.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\ic_amex_light.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\nocards.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\nocards.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\nocards.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\nocards.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\nocards.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\nocards.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_discover.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_discover.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_discover.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_discover.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_discover.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\ic_discover.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_discover_light.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_discover_light.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_discover_light.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_discover_light.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_discover_light.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\ic_discover_light.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_dinersclub.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_dinersclub.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_dinersclub.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_dinersclub.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_dinersclub.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\ic_dinersclub.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_dinersclub_white.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_dinersclub_white.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_dinersclub_white.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_dinersclub_white.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_dinersclub_white.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\ic_dinersclub_white.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_jcb.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_jcb.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_jcb.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_jcb.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_jcb.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\ic_jcb.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_chip.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_chip.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_chip.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_chip.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_chip.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\ic_chip.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_cvv.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_cvv.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_cvv.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_cvv.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_cvv.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\ic_cvv.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_date.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_date.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_date.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_date.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_date.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\ic_date.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\americanexpresslogo.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\americanexpresslogo.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\americanexpresslogo.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\americanexpresslogo.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\americanexpresslogo.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\americanexpresslogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\drawable\" />
+    <Folder Include="Resources\drawable-hdpi\" />
+    <Folder Include="Resources\drawable-xhdpi\" />
+    <Folder Include="Resources\drawable-xxhdpi\" />
+    <Folder Include="Resources\drawable-xxxhdpi\" />
+    <Folder Include="Renderers\" />
+    <Folder Include="Resources\" />
+    <Folder Include="Resources\drawable-mdpi\" />
+    <Folder Include="Resources\drawable-ldpi\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CreditCardUISample\CreditCardUISample.csproj">
+      <Project>{D51D3484-E924-4413-8D66-A8D4AD44B5D5}</Project>
+      <Name>CreditCardUISample</Name>
+    </ProjectReference>
+  </ItemGroup>
+ <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+</Project>

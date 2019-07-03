@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5B3B40EF-1C9D-4A6B-A1A9-BB80947D7487}</ProjectGuid>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TemplateGuid>{6143fdea-f3c2-4a09-aafa-6e230626515e}</TemplateGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>CreditCardUISample.iOS</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>CreditCardUISample.iOS</AssemblyName>
+    <MtouchEnableSGenConc>true</MtouchEnableSGenConc>
+    <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>x86_64</MtouchArch>
+    <MtouchLink>None</MtouchLink>
+    <MtouchDebug>true</MtouchDebug>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>x86_64</MtouchArch>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>ARM64</MtouchArch>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchDebug>true</MtouchDebug>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchArch>ARM64</MtouchArch>
+    <ConsolePause>false</ConsolePause>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <None Include="Entitlements.plist" />
+    <None Include="Info.plist" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ExtendedEntry.cs" />
+    <Compile Include="Renderers\CustomEntryRenderer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon1024.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon180.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon167.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon152.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon120.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon87.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon80.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon76.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon60.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon58.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon40.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon29.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon20.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="4.1.0.483098-pre1" />
+    <PackageReference Include="Xamarin.Forms.Visual.Material">
+      <Version>4.1.0.483098-pre1</Version>
+    </PackageReference>
+    <PackageReference Include="PropertyChanged.Fody">
+      <Version>3.0.1</Version>
+    </PackageReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="..\CreditCardUISample\CreditCardUISample.csproj">
+      <Project>{D51D3484-E924-4413-8D66-A8D4AD44B5D5}</Project>
+      <Name>CreditCardUISample</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Renderers\" />
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ic_visa%403x.png" />
+    <BundleResource Include="Resources\ic_visa%402x.png" />
+    <BundleResource Include="Resources\ic_visa.png" />
+    <BundleResource Include="Resources\ic_mastercard_white%403x.png" />
+    <BundleResource Include="Resources\ic_mastercard_white%402x.png" />
+    <BundleResource Include="Resources\ic_mastercard_white.png" />
+    <BundleResource Include="Resources\ic_mastercard%403x.png" />
+    <BundleResource Include="Resources\ic_mastercard%402x.png" />
+    <BundleResource Include="Resources\ic_mastercard.png" />
+    <BundleResource Include="Resources\ic_amex%403x.png" />
+    <BundleResource Include="Resources\ic_amex%402x.png" />
+    <BundleResource Include="Resources\ic_amex.png" />
+    <BundleResource Include="Resources\ic_amex_blue%403x.png" />
+    <BundleResource Include="Resources\ic_amex_blue%402x.png" />
+    <BundleResource Include="Resources\ic_amex_blue.png" />
+    <BundleResource Include="Resources\ic_visa_white%403x.png" />
+    <BundleResource Include="Resources\ic_visa_white%402x.png" />
+    <BundleResource Include="Resources\ic_visa_white.png" />
+    <BundleResource Include="Resources\ic_amex_light%403x.png" />
+    <BundleResource Include="Resources\ic_amex_light%402x.png" />
+    <BundleResource Include="Resources\ic_amex_light.png" />
+    <BundleResource Include="Resources\nocards%403x.png" />
+    <BundleResource Include="Resources\nocards%402x.png" />
+    <BundleResource Include="Resources\nocards.png" />
+    <BundleResource Include="Resources\ic_discover%403x.png" />
+    <BundleResource Include="Resources\ic_discover%402x.png" />
+    <BundleResource Include="Resources\ic_discover.png" />
+    <BundleResource Include="Resources\ic_discover_light%403x.png" />
+    <BundleResource Include="Resources\ic_discover_light%402x.png" />
+    <BundleResource Include="Resources\ic_discover_light.png" />
+    <BundleResource Include="Resources\ic_dinersclub%403x.png" />
+    <BundleResource Include="Resources\ic_dinersclub%402x.png" />
+    <BundleResource Include="Resources\ic_dinersclub.png" />
+    <BundleResource Include="Resources\ic_dinersclub_white%403x.png" />
+    <BundleResource Include="Resources\ic_dinersclub_white%402x.png" />
+    <BundleResource Include="Resources\ic_dinersclub_white.png" />
+    <BundleResource Include="Resources\ic_jcb%403x.png" />
+    <BundleResource Include="Resources\ic_jcb%402x.png" />
+    <BundleResource Include="Resources\ic_jcb.png" />
+    <BundleResource Include="Resources\ic_chip%403x.png" />
+    <BundleResource Include="Resources\ic_chip%402x.png" />
+    <BundleResource Include="Resources\ic_chip.png" />
+    <BundleResource Include="Resources\ic_cvv%403x.png" />
+    <BundleResource Include="Resources\ic_cvv%402x.png" />
+    <BundleResource Include="Resources\ic_cvv.png" />
+    <BundleResource Include="Resources\ic_date%403x.png" />
+    <BundleResource Include="Resources\ic_date%402x.png" />
+    <BundleResource Include="Resources\ic_date.png" />
+    <BundleResource Include="Resources\americanexpresslogo%403x.png" />
+    <BundleResource Include="Resources\americanexpresslogo%402x.png" />
+    <BundleResource Include="Resources\americanexpresslogo.png" />
+  </ItemGroup>
+</Project>
